@@ -1,0 +1,19 @@
+SQL Query for Ages sorting -
+select MRD_No, 
+CASE
+  WHEN age < 18 THEN 'Children'
+  WHEN age BETWEEN 18 AND 40 THEN 'Young Adults' 
+  WHEN age BETWEEN 41 AND 60 THEN 'Middle-aged Adults' 
+  ELSE 'Elderly'
+END AS age_group from Hospital;
+
+SQL Query for Readmissions data - 
+SELECT
+distinct(h1.MRD_No), h2.D_O_A AS readmission_date, h2.OUTCOME AS Outcome
+FROM Hospital h1 JOIN Hospital h2
+ON h1.MRD_No = h2.MRD_No AND h2.D_O_A > h1.D_O_D
+ORDER BY h1.MRD_No, h2.D_O_A;
+
+SQL Query for Expiry data -
+select * from Hospital where OUTCOME = 'EXPIRY';
+
