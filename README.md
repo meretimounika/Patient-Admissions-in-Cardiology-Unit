@@ -1,4 +1,4 @@
-# Analyzing Patient Admissions & Clinical Characteristics in the Cardiology Unit
+# Analysis of Patient Admissions & Clinical Characteristics in the Cardiology Unit
 ## Background
 This study analyses hospital admissions, readmissions, and expiries over two at Hero DMC Heart Institute, Ludhiana, a tertiary care cardiology centre. The dataset has recorded 15758 observations i.e., admissions. It captures patient demographics, admission type, comorbidities (like DM, HTN, CAD, heart failure), and lab parameters. The outcomes (discharge or expiry) were analysed to uncover trends across age groups, gender, region, and medical conditions, helping identify critical risk factors and patterns for improved patient care and hospital resource planning.
 ## Business Objectives 
